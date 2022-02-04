@@ -13,7 +13,7 @@ func removeDuplicates(_ nums: inout [Int]) -> Int {
     return nums.count
 }
 
-final class ArrayEasyTests: XCTestCase {
+final class RemoveDuplicateTests: XCTestCase {
 
     func testRemoveDuplicatesEmptyArray() {
         var nums: [Int] = []
@@ -58,4 +58,4 @@ final class ArrayEasyTests: XCTestCase {
     }
 }
 
-ArrayEasyTests.defaultTestSuite.run()
+RemoveDuplicateTests.defaultTestSuite.run()
