@@ -7,7 +7,9 @@ func rotate(_ nums: inout [Int], _ k: Int) {
         return
     }
 
-    for _ in 0..<k {
+    let returnCount = k % nums.count
+
+    for _ in 0..<returnCount {
         let last = nums.last ?? 0
         nums.removeLast()
         nums.insert(last, at: 0)
