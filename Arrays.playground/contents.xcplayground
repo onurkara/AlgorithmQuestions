@@ -5,5 +5,7 @@
         <page name='BestTimeBuySellStock'/>
         <page name='RotateArray'/>
         <page name='ContainsDuplicate'/>
+        <page name='SingleNumber'/>
+        <page name='Intersection'/>
     </pages>
 </playground>
