@@ -4,5 +4,6 @@
         <page name='RemoveDuplicates'/>
         <page name='BestTimeBuySellStock'/>
         <page name='RotateArray'/>
+        <page name='ContainsDuplicate'/>
     </pages>
 </playground>
