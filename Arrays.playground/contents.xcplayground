@@ -9,5 +9,6 @@
         <page name='Intersection'/>
         <page name='PlusOne'/>
         <page name='MoveZeroes'/>
+        <page name='TwoSum'/>
     </pages>
 </playground>
