@@ -94,3 +94,19 @@ func smallestMultiple() -> Int {
     }
     return result
 }
+
+func sumSquareDifference() -> Int {
+
+    var sumOfSquares = 0
+    var squaresSum = 0
+
+    for number in 1...100 {
+        sumOfSquares += number * number
+        squaresSum += number
+    }
+
+    squaresSum = squaresSum * squaresSum
+
+
+    return squaresSum - sumOfSquares
+}
