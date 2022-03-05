@@ -7,5 +7,6 @@
         <page name='Anagram'/>
         <page name='ValidPalindrome'/>
         <page name='ImplementStrStr'/>
+        <page name='LongestCommonPrefix'/>
     </pages>
 </playground>
