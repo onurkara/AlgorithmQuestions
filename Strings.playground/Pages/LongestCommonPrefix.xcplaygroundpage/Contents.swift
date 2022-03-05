@@ -19,14 +19,9 @@ func longestCommonPrefix(_ strs: [String]) -> String {
             str.hasPrefix(result)
         }
 
-        if isAllContains {
-
-        } else {
+        if !isAllContains {
             result.removeLast()
         }
-
     }
-
-
     return result
 }
