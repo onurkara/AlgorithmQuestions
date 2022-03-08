@@ -110,3 +110,38 @@ func sumSquareDifference() -> Int {
 
     return squaresSum - sumOfSquares
 }
+
+
+func prime10001st() -> Int {
+    func isPrime(number: Int) -> Bool {
+        var divider = 2
+        let sqrRoot = Double(number).squareRoot()
+        let sqrRootRounded = Int(sqrRoot.rounded(.up))
+
+        while divider <= sqrRootRounded {
+            if number % divider == 0 {
+                return false
+            } else {
+                divider += 1
+            }
+        }
+
+        return true
+    }
+
+    var counter = 0
+    var result = 3
+
+    while true {
+        if isPrime(number: result) {
+            counter += 1
+        }
+
+        if counter == 10000 {
+            break
+        }
+
+        result += 2
+    }
+    return result
+}
