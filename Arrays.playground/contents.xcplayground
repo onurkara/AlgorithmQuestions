@@ -5,7 +5,6 @@
         <page name='RotateArray'/>
         <page name='ContainsDuplicate'/>
         <page name='SingleNumber'/>
-        <page name='Intersection'/>
         <page name='PlusOne'/>
         <page name='MoveZeroes'/>
         <page name='TwoSum'/>
