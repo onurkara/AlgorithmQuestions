@@ -4,29 +4,32 @@ import Foundation
 
 func strStr(_ haystack: String, _ needle: String) -> Int {
 
-    guard !needle.isEmpty else {
+    let hayStackArray = Array(haystack)
+    let needleArray = Array(needle)
+    let hayStackCount = hayStackArray.count
+    let needleCount = needleArray.count
+
+    guard !needleArray.isEmpty else {
         return 0
     }
 
-    guard haystack.count >= needle.count else {
+    guard hayStackCount >= needleCount else {
         return -1
     }
 
-    var needleMaxIndex = needle.count - 1
-    var haystackIndex = 0
 
-
-    while haystack.count > needleMaxIndex {
-        let startIndex = haystack.index(haystack.startIndex, offsetBy: haystackIndex)
-        let endIndex = haystack.index(haystack.startIndex, offsetBy: needleMaxIndex)
-        let subString = String(haystack[startIndex...endIndex])
-
-        if subString == needle {
-            return haystackIndex
+    for i in 0...hayStackCount - needleCount {
+        if hayStackArray[i] == needleArray[0] {
+            for j in 0..<needleCount {
+                if hayStackArray[i+j] == needleArray[j] {
+                    if j == needleCount - 1 {
+                        return i
+                    }
+                } else {
+                    break
+                }
+            }
         }
-
-        haystackIndex += 1
-        needleMaxIndex += 1
     }
 
     return -1
